@@ -64,17 +64,10 @@
 
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="background-layers" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    <div class="grid-overlay"></div>
-  </div>
-
   <header class="site-header" id="top">
     <div class="top-nav" role="navigation" aria-label="Primary">
       <div class="nav-wrapper">
-        <div class="brand" aria-label="Zhongzhi Yu personal mark">ZY</div>
+        <div class="brand">ZY</div>
         <nav class="site-nav" aria-label="Primary">
           <a href="#news">News</a>
           <a href="#research">Research</a>
@@ -84,9 +77,8 @@
         </nav>
       </div>
     </div>
-
     <div class="hero container">
-      <div class="hero-copy">
+      <div class="hero-text">
         <p class="eyebrow">Research Scientist @ NVIDIA</p>
         <h1>Zhongzhi Yu</h1>
         <p class="lead">
@@ -99,28 +91,21 @@
           <span class="tag" role="listitem">Attention Calibration</span>
           <span class="tag" role="listitem">LLM-for-Hardware</span>
         </div>
-        <div class="hero-actions" aria-label="Primary contact links">
+        <div class="hero-links" aria-label="Primary contact links">
           <a href="mailto:zyu401@gatech.edu" class="button">Email</a>
           <a href="https://scholar.google.com/citations?user=KjvcaBQAAAAJ&hl=en" class="button ghost" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://www.linkedin.com/in/zhongzhi-yu/" class="button ghost" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/Yuzz1020" class="button ghost" target="_blank" rel="noopener">GitHub</a>
         </div>
-        <div class="hero-focus" role="presentation">
-          <p>Currently, I'm exploring on-the-fly inference upgrades for foundation models and co-designing AI accelerators with LLM assistance.</p>
-        </div>
+        <p class="current-work">
+          Currently, I'm exploring on-the-fly inference upgrades for foundation models and co-designing AI accelerators with LLM assistance.
+        </p>
       </div>
-      <aside class="hero-profile">
-        <figure class="profile-frame">
+      <div class="hero-image">
+        <figure>
           <img src="data/Zhongzhi_Img.jpg" alt="Portrait of Zhongzhi Yu" loading="lazy">
         </figure>
-        <div class="profile-card">
-          <h2>Academic Roots</h2>
-          <p>Previously, I earned my Ph.D. in Computer Science from Georgia Tech, advised by
-            <a href="https://eiclab.scs.gatech.edu/pages/team.html" target="_blank" rel="noopener">Prof. Yingyan (Celine) Lin</a>.
-          </p>
-          <p>I also hold an M.S. from Columbia University and a B.Eng. from Zhejiang University, and I have collaborated with MIT-IBM Watson AI Lab.</p>
-        </div>
-      </aside>
+      </div>
     </div>
   </header>
 
@@ -128,7 +113,6 @@
     <section class="section" id="news">
       <div class="container">
         <header class="section-header">
-          <p class="section-kicker">Signal Log</p>
           <h2>News & Highlights</h2>
           <p>Recent milestones, publications, and recognitions.</p>
         </header>
@@ -218,37 +202,25 @@
     </section>
 
     <section class="section surface" id="research">
-      <div class="container">
+      <div class="container research-section">
         <header class="section-header">
-          <p class="section-kicker">Research Thesis</p>
           <h2>Research Focus</h2>
         </header>
-        <div class="research-grid">
-          <div class="research-overview">
-            <p>
-              I study how to make large language models adaptable, efficient, and dependable in real-world settings.
-              My research spans three pillars:
-            </p>
-            <div class="pillar-grid" role="list">
-              <article class="pillar-card" role="listitem">
-                <h3>Inference Calibration</h3>
-                <p><strong>Inference Calibration:</strong> Elevating LLM outputs with lightweight attention refinements and dynamic evaluation strategies.</p>
-              </article>
-              <article class="pillar-card" role="listitem">
-                <h3>Adaptive Tuning</h3>
-                <p><strong>Adaptive Tuning:</strong> Designing compression-aware fine-tuning and voting schemes so edge devices can host powerful LLM experiences.</p>
-              </article>
-              <article class="pillar-card" role="listitem">
-                <h3>LLM-for-Hardware</h3>
-                <p><strong>LLM-for-Hardware:</strong> Co-designing silicon and software by steering LLMs to generate and verify hardware designs with human-centered workflows.</p>
-              </article>
-            </div>
-            <p>
-              Previously, I earned my Ph.D. in Computer Science from Georgia Tech, advised by
-              <a href="https://eiclab.scs.gatech.edu/pages/team.html" target="_blank" rel="noopener">Prof. Yingyan (Celine) Lin</a>.
-              I also hold an M.S. from Columbia University and a B.Eng. from Zhejiang University, and I have collaborated with MIT-IBM Watson AI Lab.
-            </p>
-          </div>
+        <div class="research-content">
+          <p>
+            I study how to make large language models adaptable, efficient, and dependable in real-world settings.
+            My research spans three pillars:
+          </p>
+          <ul>
+            <li><strong>Inference Calibration:</strong> Elevating LLM outputs with lightweight attention refinements and dynamic evaluation strategies.</li>
+            <li><strong>Adaptive Tuning:</strong> Designing compression-aware fine-tuning and voting schemes so edge devices can host powerful LLM experiences.</li>
+            <li><strong>LLM-for-Hardware:</strong> Co-designing silicon and software by steering LLMs to generate and verify hardware designs with human-centered workflows.</li>
+          </ul>
+          <p>
+            Previously, I earned my Ph.D. in Computer Science from Georgia Tech, advised by
+            <a href="https://eiclab.scs.gatech.edu/pages/team.html" target="_blank" rel="noopener">Prof. Yingyan (Celine) Lin</a>.
+            I also hold an M.S. from Columbia University and a B.Eng. from Zhejiang University, and I have collaborated with MIT-IBM Watson AI Lab.
+          </p>
         </div>
       </div>
     </section>
@@ -256,15 +228,12 @@
     <section class="section" id="publications">
       <div class="container">
         <header class="section-header">
-          <p class="section-kicker">Selected Work</p>
           <h2>Selected Publications</h2>
           <p class="subtitle">* denotes equal contribution</p>
         </header>
         <div class="publication-grid">
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/act.png" alt="Visualization for attention calibration technique">
-            </div>
+            <img src="images/act.png" alt="Visualization for attention calibration technique">
             <div class="card-body">
               <h3 class="paper-title">Unveiling and Harnessing Hidden Attention Sinks: Enhancing Large Language Models without Training through Attention Calibration</h3>
               <p class="authors">Zhongzhi Yu, Zheng Wang, Yonggan Fu, Huihong Shi, Khalid Shaikh, Yingyan (Celine) Lin</p>
@@ -273,9 +242,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/edge-llm.gif" alt="Visualization for EDGE-LLM">
-            </div>
+            <img src="images/edge-llm.gif" alt="Visualization for EDGE-LLM">
             <div class="card-body">
               <h3 class="paper-title">EDGE-LLM: Enabling Efficient Large Language Model Adaptation on Edge Devices via Layerwise Unified Compression and Adaptive Layer Tuning and Voting</h3>
               <p class="authors">Zhongzhi Yu, Zheng Wang, Yuhan Li, Haoran You, Ruijie Gao, Xiaoya Zhou, Sreenidhi Reedy Bommu, Yang (Katie) Zhao, Yingyan (Celine) Lin</p>
@@ -284,9 +251,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/mg-verilog.png" alt="Visualization for MG-Verilog dataset">
-            </div>
+            <img src="images/mg-verilog.png" alt="Visualization for MG-Verilog dataset">
             <div class="card-body">
               <h3 class="paper-title">MG-Verilog: Multi-grained Dataset Towards Enhanced LLM-assisted Verilog Generation</h3>
               <p class="authors">Yongan Zhang, Zhongzhi Yu, Yonggan Fu, Cheng Wan, Yingyan (Celine) Lin</p>
@@ -295,9 +260,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/GPT4AIGchip.png" alt="Visualization for GPT4AIGChip framework">
-            </div>
+            <img src="images/GPT4AIGchip.png" alt="Visualization for GPT4AIGChip framework">
             <div class="card-body">
               <h3 class="paper-title">GPT4AIGChip: Towards Next-Generation AI Accelerator Design Automation via Large Language Models</h3>
               <p class="authors">Yonggan Fu*, Yongan Zhang*, Zhongzhi Yu*, Sixu Li, Zhifan Ye, Chaojian Li, Cheng Wan, Yingyan (Celine) Lin</p>
@@ -306,9 +269,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/master_asr.png" alt="Visualization for Master-ASR framework">
-            </div>
+            <img src="images/master_asr.png" alt="Visualization for Master-ASR framework">
             <div class="card-body">
               <h3 class="paper-title">Master-ASR: Achieving Multilingual Scalability and Low-Resource Adaptation in ASR with Modularized Learning</h3>
               <p class="authors">Zhongzhi Yu, Yang Zhang, Kaizhi Qian, Cheng Wan, Yonggan Fu, Yongan Zhang, Yingyan (Celine) Lin</p>
@@ -317,9 +278,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/Hint-Aug.png" alt="Visualization for Hint-Aug">
-            </div>
+            <img src="images/Hint-Aug.png" alt="Visualization for Hint-Aug">
             <div class="card-body">
               <h3 class="paper-title">Hint-Aug: Drawing Hints from Vision Foundation Models towards Boosted Few-shot Parameter-Efficient ViT Tuning</h3>
               <p class="authors">Zhongzhi Yu, Shang Wu, Yonggan Fu, Cheng Wan, Shunyao Zhang, Chaojian Li, Yingyan (Celine) Lin</p>
@@ -328,9 +287,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/netbooster.png" alt="Visualization for NetBooster">
-            </div>
+            <img src="images/netbooster.png" alt="Visualization for NetBooster">
             <div class="card-body">
               <h3 class="paper-title">NetBooster: Empowering Tiny Deep Learning By Standing on the Shoulders of Deep Giants</h3>
               <p class="authors">Zhongzhi Yu, Yonggan Fu, Jiayi Yuan, Haoran You, Yingyan (Celine) Lin</p>
@@ -339,9 +296,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/eyecod_tp.png" alt="Visualization for EyeCoD system">
-            </div>
+            <img src="images/eyecod_tp.png" alt="Visualization for EyeCoD system">
             <div class="card-body">
               <h3 class="paper-title">EyeCoD: Eye Tracking System Acceleration via FlatCam-based Algorithm/Hardware Co-Design</h3>
               <p class="authors">Haoran You*, Cheng Wan*, Yang Zhao*, Zhongzhi Yu*, Yonggan Fu, Jiayi Yuan, Shang Wu, Shunyao Zhang, Yongan Zhang, Chaojian Li, Vivek Boominathan, Ashok Veeraraghavan, Ziyun Li, Yingyan (Celine) Lin</p>
@@ -350,9 +305,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/AugViT-1.png" alt="Visualization for AugViT">
-            </div>
+            <img src="images/AugViT-1.png" alt="Visualization for AugViT">
             <div class="card-body">
               <h3 class="paper-title">AugViT: Improving Vision Transformer Training by Marrying Attention and Data Augmentation</h3>
               <p class="authors">Zhongzhi Yu, Yonggan Fu, Chaojian Li, Yingyan (Celine) Lin</p>
@@ -361,9 +314,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/miaformer.png" alt="Visualization for MIA-Former">
-            </div>
+            <img src="images/miaformer.png" alt="Visualization for MIA-Former">
             <div class="card-body">
               <h3 class="paper-title">MIA-Former: Efficient and Robust Vision Transformers via Multi-grained Input-Adaptation</h3>
               <p class="authors">Zhongzhi Yu, Yonggan Fu, Sicheng Li, Mengquan Li, Chaojian Li, Yingyan (Celine) Lin</p>
@@ -372,9 +323,7 @@
             </div>
           </article>
           <article class="publication-card">
-            <div class="publication-media">
-              <img src="images/LDP.png" alt="Visualization for LDP framework">
-            </div>
+            <img src="images/LDP.png" alt="Visualization for LDP framework">
             <div class="card-body">
               <h3 class="paper-title">LDP: Learnable Dynamic Precision for Efficient Deep Neural Network Training and Inference</h3>
               <p class="authors">Zhongzhi Yu, Yonggan Fu, Shang Wu, Mengquan Li, Haoran You, Yingyan Lin</p>
@@ -389,18 +338,17 @@
     <section class="section surface" id="service">
       <div class="container">
         <header class="section-header">
-          <p class="section-kicker">Community</p>
           <h2>Academic Service</h2>
         </header>
-        <div class="service-grid">
-          <article class="service-card">
+        <div class="service-list">
+          <div class="service-card">
             <h3>Conference Reviewer</h3>
             <p>ICLR 2023, NeurIPS 2022–2023, ICML 2023, CVPR 2023, AAAI 2022, AICAS 2022.</p>
-          </article>
-          <article class="service-card">
+          </div>
+          <div class="service-card">
             <h3>Artifact Evaluation</h3>
             <p>MICRO 2023 Artifact Evaluation Committee.</p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -408,9 +356,7 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <div>
-        <p class="footer-kicker">Last updated: Dec 2024</p>
-      </div>
+      <p>Last updated: Dec 2024</p>
       <div class="footer-links">
         <a href="#top">Back to top</a>
         <a href="https://github.com/jonbarron/website" target="_blank" rel="noopener">Original Template</a>
